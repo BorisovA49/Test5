@@ -1,9 +1,9 @@
 import java.util.Scanner;
-import java.util.Arrays;
+
 
 public class Main {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in); // создали объектвs
+        Scanner sc = new Scanner(System.in); // создали объектв
             int year = sc.nextInt(); // год начала работы
             exceptions(year);
     }
