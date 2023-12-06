@@ -3,9 +3,9 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in); // создали объектв
-            int year = sc.nextInt(); // год начала работы
-            exceptions(year);
+        Scanner sc = new Scanner(System.in); // создали объектв ss
+        int year = sc.nextInt(); // год начала работы
+        exceptions(year);
     }
     private static float exceptions(int year) {
         float a = 0; // еще одна не нужная функция
@@ -17,7 +17,7 @@ public class Main {
         }
         return a;
     }
-        private static float convenientFunction(int year) {
+    private static float convenientFunction(int year) {
         float seizurePercentage = 0; // процент изъятия в процентах ключ
         while (true) {
             double initialCapital = Constants.MOEX_RATE[year - 2002]; // начальный капитал нельзя избваться, переменная будет изменятсья
@@ -33,8 +33,8 @@ public class Main {
                 break;
             }
         }
-            return seizurePercentage;
-        }
+        return seizurePercentage;
+    }
 }
 
 
