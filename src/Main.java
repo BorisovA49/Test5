@@ -3,7 +3,7 @@ import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in); // создали объектв
+        Scanner sc = new Scanner(System.in); // создали объектвs
             int year = sc.nextInt(); // год начала работы
             exceptions(year);
     }
