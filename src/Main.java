@@ -30,7 +30,7 @@ public class Main {
         for (int y = 0; y < GlobalConstants.END_YEAR - year; y++) {
             initialCapital -= withdrawal;
             initialCapital *= (Constants.MOEX_RATE[year - GlobalConstants.START_YEAR + y + 1] / Constants.MOEX_RATE[year - GlobalConstants.START_YEAR + y]);
-            withdrawal = withdrawal * (100 + Constants.INFLATION_RATE[year - GlobalConstants.START_YEAR + y]) / 100; // расчет инфляции по формуле X = X *// (100 + инфляция)/100
+            withdrawal = withdrawal * (100 + Constants.INFLATION_RATE[year - GlobalConstants.START_YEAR + y]) / 100; // расчет инфляции по формуле X = X *// (100 + инфляция)/100 где 100 нам требуетсяь для уведичения цены, а последущая для её уменьшения
 
 
         }
