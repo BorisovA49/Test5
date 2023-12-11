@@ -30,8 +30,9 @@ public class Main {
         for (int y = 0; y < GlobalConstants.END_YEAR - year; y++) {
             initialCapital -= withdrawal;
             initialCapital *= (Constants.MOEX_RATE[year - GlobalConstants.START_YEAR + y + 1] / Constants.MOEX_RATE[year - GlobalConstants.START_YEAR + y]);
-            withdrawal = withdrawal * (GlobalConstants.GENERAL_FORM_INFLATION + Constants.INFLATION_RATE[year - GlobalConstants.START_YEAR + y]) / GlobalConstants.GENERAL_FORM; // расчет инфляции по формуле
-            // X = X *// (100 + инфляция)/100 где первое 100 требуется для измения инфляции в математически приятный вид, а 2 приводит число в используемую для задачи форму
+            withdrawal = withdrawal * (GlobalConstants.GENERAL_FORM_INFLATION + Constants.INFLATION_RATE[year - GlobalConstants.START_YEAR + y]) / GlobalConstants.GENERAL_FORM_INFLATION; // расчет инфляции по формуле
+            // X = X *// (100 + инфляция)/100 где первое 100 требуется для измения инфляции в математически приятный вид, а 2 приводит число в используемую для задачи форму, смотря сколько знаков мы имеем после зпт
+            //
 
 
         }
@@ -44,5 +45,5 @@ class GlobalConstants {
     public static final int START_YEAR = 2002; // начало лет по заданию(стартовая точка)
     public static final int END_YEAR = 2022;// Конец лет по заданию(конечняа точка)
     public static final int GENERAL_FORM_INFLATION = 100; // Приведение  инфляции с учетом зпт
-    public static final int GENERAL_FORM = 100; // Приведение в вид с учетом умножений
+
 }
