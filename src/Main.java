@@ -14,7 +14,7 @@ public class Main {
 
     private static void convenientFunction(int year) {
 
-        double withdrawalPercentage = 0; // процент изьятия взял в процентах
+        double withdrawalPercentage = 0; // процент изьятия взял в процентах, ноль потому что отсчет пойдет с 0,5 и а цикл стартует с + 0,5
         while (true) {
             double initialCapital = Constants.MOEX_RATE[year - GlobalConstants.START_YEAR]; // начальный капитал, 2002 означает год начала нашего года
             withdrawalPercentage += GlobalConstants.UPDATE_PROC; // Увеличение на округленный процент
