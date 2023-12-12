@@ -53,4 +53,10 @@ public class Constants {
             11.92,
     };
 
+    public static final double UPDATE_PROC = 0.5; // процент округления
+    public static final int START_YEAR = 2002; // начало лет по заданию(стартовая точка)
+    public static final int END_YEAR = 2022;// Конец лет по заданию(конечняа точка)
+    public static final int GENERAL_FORM_INFLATION = 100; // Приведение  инфляции с учетом зпт
+
+
 }
