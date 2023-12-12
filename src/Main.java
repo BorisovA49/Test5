@@ -18,7 +18,7 @@ public class Main {
         while (true) {
             double initialCapital = Constants.MOEX_RATE[year - Constants.START_YEAR]; // начальный капитал, 2002 означает год начала нашего года
             withdrawalPercentage += Constants.UPDATE_PROC; // Увеличение на округленный процент
-            double withdrawalMoney = Constants.MOEX_RATE[year - Constants.START_YEAR] * withdrawalPercentage * 0.01; // процент изъятия в деньгах, 0.01 означает перевод в проценты
+            double withdrawalMoney = Constants.MOEX_RATE[year - Constants.START_YEAR] * withdrawalPercentage * Constants.PROCENT; // процент изъятия в деньгах, 0.01 означает перевод в проценты
             if (veryConvenientFunction(year, initialCapital, withdrawalMoney) < 0) { // Мы не переживаем этот год и используем предыдущий процент изъятия, вчиатем период 0.5
                 System.out.println(withdrawalPercentage - Constants.UPDATE_PROC);
                 break;
